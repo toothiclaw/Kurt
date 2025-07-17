@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>How to be Kurt?</title>
   <style>
     body {
@@ -43,4 +43,28 @@
     }
   </style>
 </head>
+<body>
+
+  <h1>How to be Kurt?</h1>
+
+  <div id="main">
+    <img id="mainImage" src="images/red-sweater.jpg" alt="선택된 이미지" />
+  </div>
+
+  <div id="menu">
+    <button onclick="showCategory('outfits')">▶ Outfits</button>
+    <button onclick="showCategory('toys')">▶ Toys</button>
+    <button onclick="showCategory('personality')">▶ Personality</button>
+    <button onclick="showCategory('instruments')">▶ Instruments</button>
+    <button onclick="showCategory('cigarettes')">▶ Cigarettes</button>
+    <button onclick="showCategory('journals')">▶ Journals</button>
+  </div>
+
+  <div id="galleryArea"></div>
+
+  <div id="detailArea"></div>
+
+  <script src="script.js"></script>
+
 </body>
+</html>
