@@ -1,70 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>How to be Kurt?</title>
-  <style>
-    body {
-      background-color: #111;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 20px;
-    }
+<style>
+  body {
+    background: url('images/grunge-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f2f2f2;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 1px 1px 2px black;
+  }
 
-    #main img {
-      max-width: 300px;
-      margin: 20px 0;
-    }
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color: #ffcc00;
+    text-transform: uppercase;
+    border-bottom: 2px dashed #555;
+    padding-bottom: 10px;
+  }
 
-    button {
-      margin: 5px;
-      padding: 10px 20px;
-      background-color: #333;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
+  #main img {
+    max-width: 350px;
+    margin: 30px auto;
+    border: 4px solid #444;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+  }
 
-    button:hover {
-      background-color: #555;
-    }
+  button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #222;
+    color: #ffcc00;
+    border: 2px solid #666;
+    border-radius: 0;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
 
-    #galleryArea img {
-      width: 150px;
-      display: block;
-      margin: 10px auto 5px;
-    }
+  button:hover {
+    background-color: #444;
+    color: white;
+    border-color: #999;
+  }
 
-    #galleryArea div {
-      display: inline-block;
-      margin: 15px;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
+  #galleryArea img {
+    width: 150px;
+    display: block;
+    margin: 10px auto 5px;
+    border: 2px solid #666;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
 
-  <h1>How to be Kurt?</h1>
+  #galleryArea div {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+    border: 1px dashed #888;
+  }
 
-  <div id="main">
-    <img id="mainImage" src="images/main-image.jpg" alt="선택된 이미지" />
-  </div>
+  #detailArea {
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border: 2px solid #666;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-  <div id="menu">
-    <button onclick="showCategory('outfits')">▶ Outfits</button>
-    <button onclick="showCategory('toys')">▶ Toys</button>
-    <button onclick="showCategory('personality')">▶ Personality</button>
-    <button onclick="showCategory('instruments')">▶ Instruments</button>
-    <button onclick="showCategory('cigarettes')">▶ Cigarettes</button>
-    <button onclick="showCategory('journals')">▶ Journals</button>
-  </div>
+  #detailArea h3 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
 
-  <div id="galleryArea"></div>
-
-  <div id="detailArea"></div>
-
-  <script src="script.js"></script>
-
-</body>
-</html>
+  #detailArea p {
+    color: #ddd;
+    font-size: 0.95em;
+  }
+</style>
