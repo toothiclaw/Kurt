@@ -1,17 +1,71 @@
-<h1>How to be Kurt?</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>How to be Kurt?</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
 
-<div id="main">
-  <img id="mainImage" src="script.js" alt="선택된 이미지">
-</div>
+    #main img {
+      max-width: 300px;
+      margin: 20px 0;
+    }
 
-<div id="menu">
-  <button onclick="showCategory('outfits')">▶ Outfits</button>
-  <button onclick="showCategory('toys')">▶ Toys</button>
-  <button onclick="showCategory('personality')">▶ Personality</button>
-  <button onclick="showCategory('instruments')">▶ Instruments</button>
-</div>
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
 
-<div id="galleryArea"></div>
-<div id="detailArea">
-  <!-- 세부 설명 공간: 비워둘게 -->
-</div>
+    button:hover {
+      background-color: #555;
+    }
+
+    #galleryArea img {
+      width: 150px;
+      display: block;
+      margin: 10px auto 5px;
+    }
+
+    #galleryArea div {
+      display: inline-block;
+      margin: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>How to be Kurt?</h1>
+
+  <div id="main">
+    <img id="mainImage" src="" alt="선택된 이미지">
+  </div>
+
+  <div id="menu">
+    <button onclick="showCategory('outfits')">▶ Outfits</button>
+    <button onclick="showCategory('toys')">▶ Toys</button>
+    <button onclick="showCategory('personality')">▶ Personality</button>
+    <button onclick="showCategory('instruments')">▶ Instruments</button>
+  </div>
+
+  <div id="galleryArea"></div>
+
+  <div id="detailArea">
+    <!-- 세부 설명 공간 -->
+  </div>
+
+  <!-- ✅ 여기에 자바스크립트 연결 -->
+  <script src="script.js"></script>
+
+</body>
+</html>
